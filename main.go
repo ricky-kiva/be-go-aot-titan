@@ -1,8 +1,6 @@
 package main
 
 import (
-	"os"
-
 	"github.com/gin-gonic/gin"
 )
 
@@ -15,11 +13,5 @@ func main() {
 
 	defer db.Close()
 
-	port := os.Getenv("PORT")
-
-	if port == "" {
-		port = "3000"
-	}
-
-	r.Run("0.0.0.0:" + port)
+	r.Run()
 }
