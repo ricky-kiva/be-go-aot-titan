@@ -1,0 +1,224 @@
+{
+	"info": {
+		"_postman_id": "0d308b43-14e4-4101-83a0-953bff427d34",
+		"name": "BE [Go] Attack on Titan",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26442482",
+		"_collection_link": "https://www.postman.com/rickyslash/workspace/ms-go-backend/collection/26442482-0d308b43-14e4-4101-83a0-953bff427d34?action=share&source=collection_link&creator=26442482"
+	},
+	"item": [
+		{
+			"name": "Login Admin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"admin\",\r\n    \"password\": \"Pass123!\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://be-go-aot-titan-production.up.railway.app/login",
+					"protocol": "https",
+					"host": [
+						"be-go-aot-titan-production",
+						"up",
+						"railway",
+						"app"
+					],
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create new Soldier",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"soldier_id\": 2,\r\n    \"soldier_name\": \"Armin Arlert\",\r\n    \"soldier_division\": \"Survey Corps\",\r\n    \"soldier_specialization\": \"Intuitive strategist\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://be-go-aot-titan-production.up.railway.app/aot",
+					"protocol": "https",
+					"host": [
+						"be-go-aot-titan-production",
+						"up",
+						"railway",
+						"app"
+					],
+					"path": [
+						"aot"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all Soldiers",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDE1MjQ0MDIsImlhdCI6MTcwMTUyNDM0MiwiaXNzIjoidGVzdCJ9.96SzMKFkQcopbxkFXzNAB9-CIIXwKrPdaLciQHhod4k",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://be-go-aot-titan-production.up.railway.app/aot",
+					"protocol": "https",
+					"host": [
+						"be-go-aot-titan-production",
+						"up",
+						"railway",
+						"app"
+					],
+					"path": [
+						"aot"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Soldier by Id",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDE1MjQ0MDIsImlhdCI6MTcwMTUyNDM0MiwiaXNzIjoidGVzdCJ9.96SzMKFkQcopbxkFXzNAB9-CIIXwKrPdaLciQHhod4k",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://be-go-aot-titan-production.up.railway.app/aot/2",
+					"protocol": "https",
+					"host": [
+						"be-go-aot-titan-production",
+						"up",
+						"railway",
+						"app"
+					],
+					"path": [
+						"aot",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Soldier by Id",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"soldier_id\": 2,\r\n    \"soldier_name\": \"Mikasa Ackerman\",\r\n    \"soldier_division\": \"Survey Corps\",\r\n    \"soldier_specialization\": \"Super strength\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://be-go-aot-titan-production.up.railway.app/aot/2",
+					"protocol": "https",
+					"host": [
+						"be-go-aot-titan-production",
+						"up",
+						"railway",
+						"app"
+					],
+					"path": [
+						"aot",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Soldier by Id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://be-go-aot-titan-production.up.railway.app/aot/2",
+					"protocol": "https",
+					"host": [
+						"be-go-aot-titan-production",
+						"up",
+						"railway",
+						"app"
+					],
+					"path": [
+						"aot",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get default endpoint",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://be-go-aot-titan-production.up.railway.app",
+					"protocol": "https",
+					"host": [
+						"be-go-aot-titan-production",
+						"up",
+						"railway",
+						"app"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "port",
+			"value": "8080",
+			"type": "string"
+		}
+	]
+}
