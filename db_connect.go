@@ -11,6 +11,7 @@ import (
 func connectDB() (*gorm.DB, error) {
 	// load environment variables file (.env)
 	// errEnv := godotenv.Load(".env")
+
 	// if errEnv != nil {
 	// 	log.Fatal("Error load .env") // this will also do exit the program
 	// }
