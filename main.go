@@ -4,6 +4,7 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
+// run by `go run .`
 func main() {
 	r := gin.Default()
 	db, err := connectDB()
