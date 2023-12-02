@@ -18,7 +18,7 @@ func main() {
 	port := os.Getenv("PORT")
 
 	if port == "" {
-		port = "8080"
+		port = "3000"
 	}
 
 	r.Run("0.0.0.0:" + port)
