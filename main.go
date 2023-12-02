@@ -12,5 +12,5 @@ func main() {
 
 	defer db.Close()
 
-	r.Run(":8080")
+	r.Run()
 }
